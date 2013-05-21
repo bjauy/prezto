@@ -40,8 +40,8 @@ zstyle ':prezto:load' pmodule \
   'tmux' \
   'syntax-highlighting' \
   'history-substring-search' \
-  'ssh-agent' \
-  'gpg-agent' \
+  'ssh' \
+  'gpg' \
   'rsync' \
   'rails' \
   'prompt'
@@ -111,17 +111,17 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 #
 
 # Enable SSH-Agent protocol emulation.
-zstyle ':prezto:module:gpg-agent' ssh-support 'yes'
+# style ':prezto:module:gpg' ssh-support 'yes'
 
 #
 # SSH-Agent
 #
 
 # Enable ssh-agent forwarding.
-zstyle ':prezto:module:ssh-agent' forwarding 'yes'
+# zstyle ':prezto:module:ssh' forwarding 'yes'
 
 # Set ssh-agent identities to load.
-zstyle ':prezto:module:ssh-agent' identities 'id_rsa' 'id_rsa_ossh'
+zstyle ':prezto:module:ssh:load' identities 'id_rsa' 'id_rsa_ossh'
 
 #
 # Syntax Highlighting
